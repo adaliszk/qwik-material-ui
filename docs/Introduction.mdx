@@ -1,0 +1,22 @@
+# @adaliszk/qwik-material-components
+
+Implements the 3rd version of Material Design for Qwik with Builder.io support. The goal is to provide a lightweight
+solution and expose enough CSS properties to customize the experience.
+
+## Usage
+
+1. Add the package types with yarn or npm:
+    ```bash
+      yarn add @adaliszk/qwik-material-ui
+    ```
+2. Use the Components within our Qwik application
+    ```typescript jsx
+      import { component$ } from '@builder.io/qwik'
+      import { Button } from '@adaliszk/qwik-material-ui'
+
+      export default component$(() => {
+        return (
+            <Button theme={'filled'}>Star this project</Button>
+        )
+      })
+    ```
